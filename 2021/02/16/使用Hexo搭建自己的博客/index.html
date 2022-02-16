@@ -4,17 +4,25 @@
   <meta charset="utf-8">
   
   
-  <title>liangwuuu&#39;s tech blog</title>
+  <title>搭建个人博客 | liangwuuu&#39;s tech blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="技术天地">
-<meta property="og:type" content="website">
-<meta property="og:title" content="liangwuuu&#39;s tech blog">
-<meta property="og:url" content="https://www.google.com/index.html">
+  <meta name="description" content="使用Hexo搭建自己的博客对于一个程序员来说，搭建一个属于自己的博客平台是非常有意义的事情。首先，博客可以记录自己的成长历程，也是对自己一段时间学习和工作的总结和沉淀；其他，通过博客可以营销自己，增强自己在互联网或行业内的影响力，为将来更好的职业生涯打一个坚实的基础。前几年有一本名为《软技能 - 代码之外的生存指南》的畅销书，我记得书中有这么一段话：“流行乐队的音乐才华可能并不比夜店驻场乐队高多少">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建个人博客">
+<meta property="og:url" content="https://www.google.com/2021/02/16/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="liangwuuu&#39;s tech blog">
-<meta property="og:description" content="技术天地">
+<meta property="og:description" content="使用Hexo搭建自己的博客对于一个程序员来说，搭建一个属于自己的博客平台是非常有意义的事情。首先，博客可以记录自己的成长历程，也是对自己一段时间学习和工作的总结和沉淀；其他，通过博客可以营销自己，增强自己在互联网或行业内的影响力，为将来更好的职业生涯打一个坚实的基础。前几年有一本名为《软技能 - 代码之外的生存指南》的畅销书，我记得书中有这么一段话：“流行乐队的音乐才华可能并不比夜店驻场乐队高多少">
 <meta property="og:locale">
+<meta property="og:image" content="https://www.google.com/res/hexo-default-index.png">
+<meta property="og:image" content="https://www.google.com/res/create-new-repo.png">
+<meta property="og:image" content="https://www.google.com/res/wanwang.png">
+<meta property="og:image" content="https://www.google.com/res/dns-configuration.png">
+<meta property="article:published_time" content="2021-02-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-16T12:22:03.276Z">
 <meta property="article:author" content="Wu LIANG">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.google.com/res/hexo-default-index.png">
   
     <link rel="alternate" href="/atom.xml" title="liangwuuu's tech blog" type="application/atom+xml">
   
@@ -71,91 +79,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Mybastis入门" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/14/Mybastis%E5%85%A5%E9%97%A8/" class="article-date">
-  <time class="dt-published" datetime="2022-02-13T16:00:00.000Z" itemprop="datePublished">2022-02-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Java/">Java</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/14/Mybastis%E5%85%A5%E9%97%A8/">MyBatis入门</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Mybastis学习"><a href="#Mybastis学习" class="headerlink" title="Mybastis学习"></a>Mybastis学习</h1><h2 id="3-Mybatis结构"><a href="#3-Mybatis结构" class="headerlink" title="3. Mybatis结构"></a>3. Mybatis结构</h2><p>mapper-config.xml: 包含了事务控制器、数据库连接、资源绑定</p>
-<p>SqlSession实例的创建，通过对象去操作sql的执行</p>
-<p>实体类: User类</p>
-<p>Dao层: <interface>UserDao与UserDao.xml，之间存在映射关系</p>
-<h2 id="4-配置解析"><a href="#4-配置解析" class="headerlink" title="4. 配置解析"></a>4. 配置解析</h2><h3 id="1-核心配置文件"><a href="#1-核心配置文件" class="headerlink" title="1. 核心配置文件"></a>1. 核心配置文件</h3><h3 id="2-环境配置-environments"><a href="#2-环境配置-environments" class="headerlink" title="2. 环境配置(environments)"></a>2. 环境配置(environments)</h3><h3 id="3-属性-properties"><a href="#3-属性-properties" class="headerlink" title="3. 属性(properties)"></a>3. 属性(properties)</h3><h3 id="4-类型别名-typeAlias"><a href="#4-类型别名-typeAlias" class="headerlink" title="4. 类型别名(typeAlias)"></a>4. 类型别名(typeAlias)</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--    起别名，减少完全类限定名的冗余--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;typeAlias type=&quot;com.tdccp.pojo.Actor&quot; alias=&quot;Actor&quot;/&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        实体类较多时，用包名--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tdccp.pojo&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在mapper-config.xml中进行配置，共2种写法，分别用于实体类多与少的时候，通过别名，</p>
-<p>在dao.xml里的的resultType就不需要再写成完整的完全类名</p>
-<h3 id="5-设置"><a href="#5-设置" class="headerlink" title="5. 设置"></a>5. 设置</h3><h3 id="6-其他配置"><a href="#6-其他配置" class="headerlink" title="6. 其他配置"></a>6. 其他配置</h3><h3 id="7-映射器"><a href="#7-映射器" class="headerlink" title="7. 映射器"></a>7. 映射器</h3><h3 id="8-生命周期和作用域"><a href="#8-生命周期和作用域" class="headerlink" title="8. 生命周期和作用域"></a>8. 生命周期和作用域</h3><p><strong>SqlSessionFactoryBuilder</strong></p>
-<ul>
-<li>一旦创建了，就不再需要</li>
-<li>局部变量</li>
-</ul>
-<p><strong>SqlSessionFactory</strong></p>
-<ul>
-<li>类似于：数据库连接池</li>
-<li>SqlSessionFactory一旦被创建就应该在运行期间一直存在，没有任何理由废弃它或者重新创建一个新的实例</li>
-<li>因此SqlSessionFactory的最佳作用域是应用作用域</li>
-<li>最简单的就是使用<strong>单例模式</strong>或者静态单例模式</li>
-</ul>
-<p><strong>SqlSession</strong></p>
-<ul>
-<li>连接到连接池的一个请求</li>
-<li>SqlSession的实例不是线程安全的，因此是不能被共享的，所以它的最佳作用域是请求或方法作用域</li>
-<li>用完之后需要关闭，否则资源被占用</li>
-</ul>
-<h2 id="5-解决属性名与字段名不一致问题"><a href="#5-解决属性名与字段名不一致问题" class="headerlink" title="5. 解决属性名与字段名不一致问题"></a>5. 解决属性名与字段名不一致问题</h2><h3 id="ResultMap标签"><a href="#ResultMap标签" class="headerlink" title="ResultMap标签"></a>ResultMap标签</h3><p>结果集映射</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;UserMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;User&quot;</span>&gt;</span> <span class="comment">&lt;!-- type就是对应的实体类--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;&quot;</span> <span class="attr">property</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-日志"><a href="#6-日志" class="headerlink" title="6. 日志"></a>6. 日志</h2><h3 id="6-1-日志工厂"><a href="#6-1-日志工厂" class="headerlink" title="6.1 日志工厂"></a>6.1 日志工厂</h3><p>setting -&gt; logImpl: log4j、STDOUT_LOGGING</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">&quot;db.properties&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;logImpl&quot;</span> <span class="attr">value</span>=<span class="string">&quot;STDOUT_LOGGING&quot;</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;setting name=&quot;&quot; value=&quot;&quot;/&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;setting name=&quot;&quot; value=&quot;&quot;/&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;setting name=&quot;&quot; value=&quot;&quot;/&gt;--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">typealias</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-log4j"><a href="#6-2-log4j" class="headerlink" title="6.2 log4j"></a>6.2 log4j</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">log4j.rootLogger</span>=<span class="string">DEBUG,console,file</span></span><br><span class="line"><span class="comment"># 控制台输出的相关设置</span></span><br><span class="line"><span class="attr">log4j.appender.console</span>=<span class="string">org.apache.log4j.ConsoleAppender</span></span><br><span class="line"><span class="attr">log4j.appender.console.Target</span>=<span class="string">System.out</span></span><br><span class="line"><span class="attr">log4j.appender.console.Threshold</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.appender.console.layout</span>=<span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="attr">log4j.appender.console.layout.ConversionPattern</span>=<span class="string">[%c]-%m%n</span></span><br><span class="line"><span class="comment"># 文件输出的相关设置</span></span><br><span class="line"><span class="attr">log4j.appender.file</span>=<span class="string">org.apache.log4j.RollingFileAppender</span></span><br><span class="line"><span class="attr">log4j.appender.file.File</span>=<span class="string">./log/batis.log</span></span><br><span class="line"><span class="attr">log4j.appender.file.MaxFileSize</span>=<span class="string">10mb</span></span><br><span class="line"><span class="attr">log4j.appender.file.Threshold</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.appender.file.layout</span>=<span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="attr">log4j.appender.file.layout.ConversionPattern</span>=<span class="string">[%p][%d&#123;yy-MM-dd&#125;][%c]%m%n</span></span><br><span class="line"><span class="comment"># 日志输出级别</span></span><br><span class="line"><span class="attr">log4j.logger.org.mybatis</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.logger.java.sql</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.logger.java.sql.Statement</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.logger.java.sql.ResultSet</span>=<span class="string">DEBUG</span></span><br><span class="line"><span class="attr">log4j.logger.java.sql.PreparedStatement</span>=<span class="string">DEBUG</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.google.com/2022/02/14/Mybastis%E5%85%A5%E9%97%A8/" data-id="ckzpiap4e0001tsld5m63caxi" data-title="MyBatis入门" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mybatis/" rel="tag">mybatis</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-使用Hexo搭建自己的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-使用Hexo搭建自己的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/02/16/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
   <time class="dt-published" datetime="2021-02-15T16:00:00.000Z" itemprop="datePublished">2021-02-16</time>
@@ -172,8 +96,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/16/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">搭建个人博客</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      搭建个人博客
     </h1>
   
 
@@ -461,11 +385,23 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
+  
+    <a href="/2022/02/14/Mybastis%E5%85%A5%E9%97%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          MyBatis入门
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 
 </section>
