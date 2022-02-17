@@ -20,15 +20,21 @@
     var CONFIG = {"hostname":"www.google.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="梁武的博客">
-<meta property="og:url" content="https://www.google.com/tags/mybatis/index.html">
+  <meta name="description" content="消息队列为何使用消息队列？ 解耦：当一个系统需要给多个系统发送数据时，一旦新增或者减少一个系统，代码的修改都是相当痛苦的，那么消息队列就可以用来作为消息的加工厂，生产者将数据发送到消息队列后，就不用再管，消费者随时可以去消息队列消费消息。 异步：生产者发数据，消费者消费数据，两者之间没有关系，完成了异步通信 削峰：对于消费者来说，可以避开高峰期，在低流量期依据自己落库的能力，消费对等的数据量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高可用架构">
+<meta property="og:url" content="https://www.google.com/2022/02/17/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/index.html">
 <meta property="og:site_name" content="梁武的博客">
+<meta property="og:description" content="消息队列为何使用消息队列？ 解耦：当一个系统需要给多个系统发送数据时，一旦新增或者减少一个系统，代码的修改都是相当痛苦的，那么消息队列就可以用来作为消息的加工厂，生产者将数据发送到消息队列后，就不用再管，消费者随时可以去消息队列消费消息。 异步：生产者发数据，消费者消费数据，两者之间没有关系，完成了异步通信 削峰：对于消费者来说，可以避开高峰期，在低流量期依据自己落库的能力，消费对等的数据量">
 <meta property="og:locale" content="zh_HK">
+<meta property="article:published_time" content="2022-02-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-17T13:22:32.833Z">
 <meta property="article:author" content="Wu LIANG">
+<meta property="article:tag" content="kafka">
+<meta property="article:tag" content="rabbitMq">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.google.com/tags/mybatis/">
+<link rel="canonical" href="https://www.google.com/2022/02/17/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">
 
 
 <script id="page-configurations">
@@ -36,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-hk'
   };
 </script>
 
-  <title>Tag: mybatis | 梁武的博客</title>
+  <title>高可用架构 | 梁武的博客</title>
   
 
 
@@ -145,51 +151,100 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">mybatis
-          <small>Tag</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-hk">
+    <link itemprop="mainEntityOfPage" href="https://www.google.com/2022/02/17/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wu LIANG">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梁武的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          高可用架构
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-17 00:00:00 / Modified: 21:22:32" itemprop="dateCreated datePublished" datetime="2022-02-17T00:00:00+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/queue/" itemprop="url" rel="index"><span itemprop="name">queue</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h3 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h3><h4 id="为何使用消息队列？"><a href="#为何使用消息队列？" class="headerlink" title="为何使用消息队列？"></a>为何使用消息队列？</h4><ul>
+<li><strong>解耦</strong>：当一个系统需要给多个系统发送数据时，一旦新增或者减少一个系统，代码的修改都是相当痛苦的，那么消息队列就可以用来作为消息的加工厂，生产者将数据发送到消息队列后，就不用再管，消费者随时可以去消息队列消费消息。</li>
+<li><strong>异步</strong>：生产者发数据，消费者消费数据，两者之间没有关系，完成了异步通信</li>
+<li><strong>削峰</strong>：对于消费者来说，可以避开高峰期，在低流量期依据自己落库的能力，消费对等的数据量</li>
+</ul>
+<span id="more"></span>
+
+<h4 id="如何保证消息队列的高可用性？"><a href="#如何保证消息队列的高可用性？" class="headerlink" title="如何保证消息队列的高可用性？"></a>如何保证消息队列的高可用性？</h4><ul>
+<li>RabbitMQ - 镜像集群模式：将元数据和queue里的消息存于多个实例上，每个镜像都有完整的数据，每当数据写到queue里，则同步消息到所有的实例上。当其中一个实例宕机，其余实例还拥有完整的数据，保证高可用性。但是，<em><strong>开销太大</strong></em>，同步到所有机器上，严重消耗带宽；<em><strong>无分布性，无法扩展</strong></em>，即增加机器，还是需要将完整的数据拷贝到新的机器上。</li>
+<li>Kafka：多个broker - 节点；一个topic可以划分为多个partition， 每个partition包含topic的部分数据，并且partition分散在不同broker上，实现了分布式。同时，创建replica（副本），每个partition都会把自己数据同步到其他机器上，即有自己的replica在其他机器上，保证当其中一个partition不可用时，还能有replica的数据。所有replica会选举出一个leader，剩下的则是follower，生产者将数据发放给leader，由leader将数据同步给follower，消费者从leader取数据，实现了<em><strong>高可用性</strong></em></li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-14T00:00:00+08:00"
-              content="2022-02-14">
-          02-14
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/kafka/" rel="tag"># kafka</a>
+              <a href="/tags/rabbitMq/" rel="tag"># rabbitMq</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/14/Mybastis%E5%85%A5%E9%97%A8/" itemprop="url">
-            <span itemprop="name">MyBatis入门</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/16/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" rel="prev" title="搭建个人博客">
+      <i class="fa fa-chevron-left"></i> 搭建个人博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -242,6 +297,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97"><span class="nav-number">1.</span> <span class="nav-text">消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">为何使用消息队列？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E7%9A%84%E9%AB%98%E5%8F%AF%E7%94%A8%E6%80%A7%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">如何保证消息队列的高可用性？</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
